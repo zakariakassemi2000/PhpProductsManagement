@@ -51,7 +51,7 @@
 <body>
     <h1>Products List</h1>
     <a href="ctrl.class.php?action=productForm" class="add-link">+ Add Product</a>
-    <?php if (!empty($products)): ?>
+
         <table>
             <thead>
                 <tr>
