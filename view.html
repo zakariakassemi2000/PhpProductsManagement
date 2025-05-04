@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Product Form</h2>
+  <form action="ctrl.class.php?action=addProd" method="post">
+    <label for="name">Product Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4"></textarea>
+
+    <label for="type">Type:</label>
+    Unit <input type="radio" id="type" name="type" value="U" checked>
+    Weight<input type="radio" id="type" name="type" value="W">
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="price">Price ($):</label>
+    <input type="number" id="price" name="price" min="1" required>
+
+    <button type="submit" style="margin-top: 15px;">Submit</button>
+  </form>
+
+</body>
+</html>
